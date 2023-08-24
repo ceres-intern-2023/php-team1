@@ -17,7 +17,6 @@ class AddVoiceTable extends Migration
             $table->id();
             $table->string('youtube_url');  // YoutubeURL
             $table->foreignId('user_id')->constrained('users'); // usersのid
-            $table->foreignId('animal_id')->constrained('animals'); // animalsのid
             $table->integer('like');  // いいね数
             $table->softDeletes();  // ソフトデリート
         });
