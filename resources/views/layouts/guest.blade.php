@@ -13,7 +13,7 @@
         <!-- Scripts -->
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body>
+    <body class="bg-[url('/416298.jpg')]">
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
         </div>
