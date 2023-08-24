@@ -36,12 +36,6 @@
             </div>
 
             <!-- 性別 -->
-            <div class="mt-4">
-                <x-label for="gender" :value="__('性別')" />
-
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
-            </div>
-
             <span>性別:</span>
             <div class="mt-2">
                 <input type="radio" id="male" name="gender" :value="old('gender')" required>
