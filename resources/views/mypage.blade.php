@@ -24,11 +24,11 @@
     </head>
     <body class="antialiased">
       <div class="flex">
-        <div id="left status" class="w-2/12 h-screen bg-gray-200">
+        <div id="left status" class="w-2/12 h-screen bg-blue-200 text-gray-800">
           <!-- プロフィール -->
           <div class="flex flex-col justify-center pt-8 gap-1">
             <p class="text-2xl font-bold text-center">テスト<span class="text-sm font-normal">さん</span></p>
-            <p class="text-lg text-center">58：おとこ</p>
+            <p class="text-lg text-center">58:おとこ</p>
             <p class="text-lg text-center">現在<span></span> 111ポイント</p>
 
           </div>
@@ -40,11 +40,13 @@
               <li>投稿2</li>
               <li>投稿3</li>
             </ul>
+            
+
           </div>
         </div>
 
         <div id="center main" class="w-8/12 h-screen bg-white">
-            <h2 class="text-center pt-8 text-3xl font-bold">ものまね音声を登録する</h2>
+            <h2 class="text-center pt-16 text-3xl font-bold">ものまね音声を登録する</h2>
             <div class="w-8/12 m-auto mt-6">
               <label for="">音声URLを登録してください</label>
                 <x-input id="email" class="block mt-1 w-full border-2 border-black py-1" type="email" name="email" :value="old('email')" required autofocus />
@@ -55,14 +57,17 @@
 
         </div>
 
-        <div id="right ranking" class="w-2/12 h-screen bg-gray-200">
+        <div id="right ranking" class="w-2/12 h-screen bg-blue-200 text-gray-800">
           <p class="text-2xl font-bold text-center pt-8">ランキング</p>
 
             <ul class="text-center flex flex-col gap-1 pt-6">
-              <li>1位：テストさん</li>
-              <li>2位：テストさん</li>
-              <li>3位：テストさん</li>
+              <li>1位:テストさん</li>
+              <li>2位:テストさん</li>
+              <li>3位:テストさん</li>
             </ul>
+
+            
+
         </div>
         </div>
     </body>
