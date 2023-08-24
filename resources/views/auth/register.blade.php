@@ -29,18 +29,27 @@
             </div>
 
             <!-- 年齢 -->
-            <!-- <div class="mt-4">
-                <x-label for="years_old" :value="__('年齢')" />
+            <div class="mt-4">
+                <x-label for="age" :value="__('年齢')" />
 
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
-            </div> -->
+                <x-input id="age" class="block mt-1 w-full" type="text" name="age" :value="old('age')" required />
+            </div>
 
             <!-- 性別 -->
-            <!-- <div class="mt-4">
+            <div class="mt-4">
                 <x-label for="gender" :value="__('性別')" />
 
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
-            </div> -->
+            </div>
+
+            <span>性別:</span>
+            <div class="mt-2">
+                <input type="radio" id="male" name="gender" :value="old('gender')" required>
+                <label for="male">男性</label>
+
+                <input type="radio" id="female" name="gender" :value="old('gender')" required>
+                <label for="female">女性</label>
+            </div>
 
             <!-- Password -->
             <div class="mt-4">

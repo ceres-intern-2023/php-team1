@@ -28,11 +28,11 @@
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <!-- タイトル -->
                 <div class="text-center ">
-                    <h1 class="font-bold text-4xl flex items-center justify-center gap-3"><span><img src="/f_f_object_174_s64_f_object_174_1nbg.png" alt=""></span><span class="leading-none">デュクシ
+                    <h1 class="font-bold text-3xl flex items-center justify-center gap-3"><span><img src="/f_f_object_174_s64_f_object_174_1nbg.png" alt=""></span><span class="leading-none">デュクシ
                         <br />
-                       <span class="text-lg leading-none">Duel Action Animal Fighters</span>
+                       <span class="text-lg leading-none">〜Duel Action Animal Fighters〜</span>
                     </span><span><img src="/f_f_object_104_s64_f_object_104_0nbg.png" alt=""></span></h1>
-                    <p class="">動物の鳴き声のモノマネをして競い合おう！</p>
+                    <p class="pt-4">動物の鳴き声のモノマネをして競い合おう！</p>
                 </div>
                 
 
