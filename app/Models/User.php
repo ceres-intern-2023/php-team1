@@ -45,7 +45,7 @@ class User extends Authenticatable
 
     public static function lanking()
     {
-        /*$users = DB::table('users')->get();
-        var_dump($users);*/
+        $users = DB::table('users')->select('name', 'all_likes')->orderBy('all_likes', 'desc')->get(10);
+        return $users;
     }
 }

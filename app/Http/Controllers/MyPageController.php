@@ -10,8 +10,10 @@ class MyPageController extends Controller
 {
     public function mypage()
     {
+        $users = User::lanking();
+
         /*var_dump(User::lanking());*/
-        return view('mypage');
+        return view('mypage')->with(['users' => $users]);
     }
     
     public function AnimalIndex(){
