@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class Animal extends Model
 {
@@ -27,4 +28,12 @@ class Animal extends Model
     protected $hidden = [
         'id',
     ];
+
+    public static function randomAnimal()
+    {
+        $db_all = DB::table('animals')->count();
+        $rb = random_int(1, $db_all);
+        $animal = DB::table('animals')->where('id', $rb)->value('name');
+        /*var_dump($animal);*/
+    }
 }
