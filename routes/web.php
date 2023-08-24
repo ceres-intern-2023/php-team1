@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/mypage', [App\Http\Controllers\MyPageController::class, 'mypage']);
-
+Route::get('/mypage', [App\Http\Controllers\MyPageController::class, 'AnimalIndex']);
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
