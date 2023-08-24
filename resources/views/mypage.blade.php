@@ -27,6 +27,7 @@
         <div id="left status" class="w-2/12 h-screen bg-blue-200 text-gray-800">
           <!-- プロフィール -->
           <div class="flex flex-col justify-center pt-8 gap-1">
+            <img src="/f_f_object_109_s128_f_object_109_1nbg.png" alt="" class="w-24 m-auto">
             <p class="text-2xl font-bold text-center">テスト<span class="text-sm font-normal">さん</span></p>
             <p class="text-lg text-center">58:おとこ</p>
             <p class="text-lg text-center">現在<span></span> 111ポイント</p>
