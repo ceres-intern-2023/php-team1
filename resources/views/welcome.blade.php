@@ -34,14 +34,14 @@
                 
 
                 <!-- 音声サンプル -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/HVU1lM4XVVE?si=fJj2qE8y4Tee03Qk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="rounded-lg"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HVU1lM4XVVE?si=fJj2qE8y4Tee03Qk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="rounded-lg mt-8"></iframe>
 
 
 
 
                 <!-- 登録ログインUI -->
                 @if (Route::has('login'))
-                    <div class=" py-4 sm:block">
+                    <div class=" my-6 sm:block">
                 @auth
                     <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
                 @else
