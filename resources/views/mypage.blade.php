@@ -44,7 +44,7 @@
         </div>
 
         <div id="center main" class="w-8/12 h-screen bg-white">
-            <h2 class="text-center pt-16 text-3xl font-bold">ものまね音声を登録する</h2>
+            <h2 class="text-center pt-16 text-3xl font-bold flex items-center justify-center gap-3"><span><img src="/f_f_object_108_s512_f_object_108_2nbg.png" alt="" class="w-8"></span>ものまね音声を登録する<span><img src="/f_f_object_108_s512_f_object_108_2nbg.png" alt="" class="w-8"></span></h2>
             <div class="w-8/12 m-auto mt-6">
               <label for="">音声URLを登録してください</label>
                 <x-input id="email" class="block mt-1 w-full border-2 border-black py-1" type="email" name="email" :value="old('email')" required autofocus />
