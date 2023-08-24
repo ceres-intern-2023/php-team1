@@ -6,6 +6,8 @@
 
         <title>Laravel</title>
 
+        <script src="https://cdn.tailwindcss.com"></script>
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -22,26 +24,36 @@
     </head>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            
-
+        
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                    <h1 class="text-center">デュクシ</h1>
-                    
-                <p>動物の鳴き声のモノマネをして競い合おう！</p>
+                <!-- タイトル -->
+                <div class="text-center ">
+                    <h1 class="font-bold text-4xl">デュクシ</h1>
+                    <p>動物の鳴き声のモノマネをして競い合おう！</p>
+                </div>
+                
+
+                <!-- 音声サンプル -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HVU1lM4XVVE?si=fJj2qE8y4Tee03Qk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="rounded-lg mt-8"></iframe>
+
+
+
+
+                <!-- 登録ログインUI -->
                 @if (Route::has('login'))
-                    <div class=" py-4 sm:block">
+                    <div class=" my-6 sm:block">
                 @auth
-                            <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+                    <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
                 @else
-                        <div class="flex justify-center gap-5">
+                    <div class="flex justify-center gap-5">
                     
                             <div>
-                                <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline block text-red-500">ログインする</a>
+                                <a href="{{ route('login') }}" class="text-lg text-white block font-bold rounded-lg bg-blue-500 w-48 py-4 text-center hover:bg-blue-300 duration-200">ログインする</a>
                             </div>
 
                             <div>
                             @if (Route::has('register'))
-                                <a href="{{ route('register') }}" class=" text-sm text-gray-700 dark:text-gray-500 underline block">登録する</a>
+                                <a href="{{ route('register') }}" class=" text-lg text-white font-bold block rounded-lg bg-blue-500 w-48 py-4 text-center hover:bg-blue-300 duration-200">登録する</a>
                             @endif
                             </div>
                             </div>
