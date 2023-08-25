@@ -61,19 +61,18 @@
                 </x-button>
             </div>
           </div>
-          {{ $youtubeAnimal }}
 
           <!-- 音声評価ゾーン -->
           <div class="pt-12">
             <h2 class="text-center pt-16 text-3xl font-bold flex items-center justify-center gap-5"><span><img src="/f_f_object_157_s64_f_object_157_1nbg.png" alt="" class="w-8"></span>ものまね音声の判定をする<span><img src="/f_f_object_157_s64_f_object_157_1nbg.png" alt="" class="w-8"></span></h2>
 
-            <p class="font-bold text-xl text-center pt-4">お題:{{ $animalName }}
+            <p class="font-bold text-xl text-center pt-4">お題:{{ $youtubeAnimal }}
             </p>
             <div class="flex justify-center gap-8 pt-6">
 
               <div>
                 <p class="text-2xl font-bold text-red-500">A</p>
-                <iframe width="360" height="215" src="https://www.youtube.com/embed/HVU1lM4XVVE?si=fJj2qE8y4Tee03Qk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="rounded-lg mt-1"></iframe>
+                <iframe width="360" height="215" src="{{ $youtubeUrl }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="rounded-lg mt-1"></iframe>
               </div>
 
               <div>

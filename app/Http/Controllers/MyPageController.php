@@ -19,7 +19,8 @@ class MyPageController extends Controller
         $voiceList = Voice::animalNarrowing($animalId);
         $youtube = Voice::selectVoice($voiceList);
         $youtubeAnimal = $youtube[0];
-        $youtubeUrl = $youtube[1];
+        /*$youtubeUrl = $youtube[1];*/
+        $youtubeUrl = "https://www.youtube.com/embed/bnpFSbBVOQs?si=Igu5t8zZaOTXqOps";
 
 
         /*var_dump(User::lanking());*/
@@ -34,5 +35,6 @@ class MyPageController extends Controller
         $voice->save();
         $user->increment("all_likes");
         $voice->save();
+        
     }
 }
