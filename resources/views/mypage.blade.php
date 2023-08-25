@@ -44,7 +44,13 @@
         </div>
 
         <div id="center main" class="w-8/12 h-screen bg-white">
+          <!-- 音声登録ゾーン -->
+          <div>
             <h2 class="text-center pt-16 text-3xl font-bold flex items-center justify-center gap-3"><span><img src="/f_f_object_108_s512_f_object_108_2nbg.png" alt="" class="w-8"></span>ものまね音声を登録する<span><img src="/f_f_object_108_s512_f_object_108_2nbg.png" alt="" class="w-8"></span></h2>
+
+            <p class="font-bold text-xl text-center pt-4">お題:{{ $animal }}
+            </p>
+
             <div class="w-8/12 m-auto mt-6">
               <label for="">音声URLを登録してください</label>
                 <x-input id="email" class="block mt-1 w-full border-2 border-black py-1" type="email" name="email" :value="old('email')" required autofocus />
@@ -52,6 +58,14 @@
                     {{ __('投稿する') }}
                 </x-button>
             </div>
+          </div>
+
+          <!-- 音声評価ゾーン -->
+          <div>
+            <h2 class="text-center pt-16 text-3xl font-bold flex items-center justify-center gap-3"><span><img src="/f_f_object_108_s512_f_object_108_2nbg.png" alt="" class="w-8"></span>ものまね音声の判定をする<span><img src="/f_f_object_108_s512_f_object_108_2nbg.png" alt="" class="w-8"></span></h2>
+
+          </div>
+
         </div>
 
         <div id="right ranking" class="w-2/12 h-screen bg-blue-200 text-gray-800">
