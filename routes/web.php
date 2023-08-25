@@ -20,8 +20,8 @@ Route::get('/', function () {
 
 Route::get('/mypage', [App\Http\Controllers\MyPageController::class, 'mypage']);
 /*Route::get('/mypage', [App\Http\Controllers\MyPageController::class, 'AnimalIndex']);*/
-Route::get('/mypage', function () {
-    return view('mypage');
-})->middleware(['auth'])->name('mypage');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
