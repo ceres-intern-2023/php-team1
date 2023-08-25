@@ -26,8 +26,20 @@ class Voice extends Model
 
     public static function animalNarrowing($animalId)
     {
-        $voices = DB::table('voices')->where('animal_id', '=', $animalId)->get();
+        $voices = DB::table('voices')->where('animal_id', '=', $animalId);
         return $voices;
+    }
+
+    public static function selectVoice($voices)
+    {
+        $randomAnimal = Animal::inRandomOrder()->first();
+        $randomAnimalId = $randomAnimal->id;
+        $randomAnimalName = $randomAnimal->name;
+        $randomVoicesYoutubeUrls = Voice::where('animal_id', $randomAnimalId)
+            ->inRandomOrder()
+            ->take(2)
+            ->pluck('youtube_url');
+        return [$randomAnimalName, $randomVoicesYoutubeUrls];
     }
 
 }

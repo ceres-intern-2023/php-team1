@@ -16,9 +16,10 @@ class MyPageController extends Controller
         $animalName = $animal->value('name');
         $animalId = $animal->value('id');
         $voiceList = Voice::animalNarrowing($animalId);
+        $youtube = Voice::selectVoice($voiceList);
 
 
         /*var_dump(User::lanking());*/
-        return view('mypage', compact('users', 'animalName'));
+        return view('mypage', compact('users', 'animalName', 'youtube'));
     }
 }
