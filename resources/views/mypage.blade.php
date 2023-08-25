@@ -61,6 +61,7 @@
                 </x-button>
             </div>
           </div>
+          {{ $youtubeAnimal }}
 
           <!-- 音声評価ゾーン -->
           <div class="pt-12">

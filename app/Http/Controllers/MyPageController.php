@@ -18,10 +18,12 @@ class MyPageController extends Controller
         $animalId = $animal->value('id');
         $voiceList = Voice::animalNarrowing($animalId);
         $youtube = Voice::selectVoice($voiceList);
+        $youtubeAnimal = $youtube[0];
+        $youtubeUrl = $youtube[1];
 
 
         /*var_dump(User::lanking());*/
-        return view('mypage', compact('users', 'animalName', 'youtube'));
+        return view('mypage', compact('users', 'animalName', 'youtubeAnimal', 'youtubeUrl'));
     }
 
     public function postLike($id)
