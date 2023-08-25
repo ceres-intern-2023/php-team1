@@ -34,6 +34,6 @@ class Animal extends Model
         $db_all = DB::table('animals')->count();
         $rb = random_int(1, $db_all);
         $animal = DB::table('animals')->where('id', $rb)->value('name');
-        /*var_dump($animal);*/
+        return $animal;
     }
 }
