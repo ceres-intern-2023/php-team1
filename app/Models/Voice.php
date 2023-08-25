@@ -38,7 +38,7 @@ class Voice extends Model
         $randomVoicesYoutubeUrls = Voice::where('animal_id', $randomAnimalId)
             ->inRandomOrder()
             ->take(2)
-            ->pluck('youtube_url');
+            ->pluck('id', 'youtube_url');
         return [$randomAnimalName, $randomVoicesYoutubeUrls];
     }
 
