@@ -13,9 +13,7 @@ class MyPageController extends Controller
         $users = User::lanking();
         $animal = Animal::randomAnimal();
 
-        /*var_dump($animal);*/
-
         /*var_dump(User::lanking());*/
-        return view('mypage')->with(['users' => $users], ['animal' => $animal]);
+        return view('mypage', compact('users', 'animal'));
     }
 }
