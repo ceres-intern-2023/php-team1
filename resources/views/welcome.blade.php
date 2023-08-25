@@ -22,12 +22,18 @@
             }
         </style>
     </head>
-    <body class="antialiased" class="">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+    <body class="antialiased">
+        <div class="relative flex items-top justify-center min-h-screen bg-white  dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
         
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8 relative">
+            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8 relative ">
                 <img src="/22117935.png" alt="" class="right-[-60%] top-[50%] w-72 z-10 absolute">
                 <img src="/22117935.png" alt="" class="left-[-60%] top-[20%] w-72 z-10 absolute">
+                <img src="/22117935.png" alt="" class="left-[-40%] top-[10%] w-72 z-10 absolute">
+                <img src="/22117935.png" alt="" class="right-[-40%] top-[80%] w-72 z-10 absolute">
+                <img src="/22117935.png" alt="" class="left-[-40%] top-[80%] w-72 z-10 absolute">
+                <img src="/22117935.png" alt="" class="right-[-40%] top-[10%] w-72 z-10 absolute">
+                <img src="/22117935.png" alt="" class="left-[-40%] top-[40%] w-72 z-10 absolute">
+                <img src="/22117935.png" alt="" class="right-[-40%] top-[1%] w-72 z-10 absolute">
                 <!-- タイトル -->
                 <div class="text-center ">
                     <h1 class="font-bold text-3xl flex items-center justify-center gap-3"><span><img src="/f_f_object_174_s64_f_object_174_1nbg.png" alt=""></span><span class="leading-none">デュクシ

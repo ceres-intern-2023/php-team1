@@ -58,6 +58,7 @@
         <div id="right ranking" class="w-2/12 h-screen bg-blue-200 text-gray-800">
           <p class="text-2xl font-bold text-center pt-8">ランキング</p>
 
+          
             
 
             
