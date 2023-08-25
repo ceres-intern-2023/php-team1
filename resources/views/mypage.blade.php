@@ -72,12 +72,12 @@
 
               <div>
                 <p class="text-2xl font-bold text-red-500">A</p>
-                <iframe width="360" height="215" src="{{ $youtubeUrl }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="rounded-lg mt-1"></iframe>
+                <iframe width="360" height="215" src="{{ $youtubeUrl1 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="rounded-lg mt-1"></iframe>
               </div>
 
               <div>
                 <p class="text-2xl font-bold text-blue-500">B</p>
-                <iframe width="360" height="215" src="https://www.youtube.com/embed/HVU1lM4XVVE?si=fJj2qE8y4Tee03Qk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="rounded-lg mt-1"></iframe>
+                <iframe width="360" height="215" src="{{ $youtubeUrl2 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="rounded-lg mt-1"></iframe>
               </div>
 
             </div>

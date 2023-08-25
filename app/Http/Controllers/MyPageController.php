@@ -19,12 +19,13 @@ class MyPageController extends Controller
         $voiceList = Voice::animalNarrowing($animalId);
         $youtube = Voice::selectVoice($voiceList);
         $youtubeAnimal = $youtube[0];
-        /*$youtubeUrl = $youtube[1];*/
-        $youtubeUrl = "https://www.youtube.com/embed/bnpFSbBVOQs?si=Igu5t8zZaOTXqOps";
+        $youtubeUrl = $youtube[1];
+        $youtubeUrl1 = $youtubeUrl[0];
+        $youtubeUrl2 = $youtubeUrl[1];
 
 
         /*var_dump(User::lanking());*/
-        return view('mypage', compact('users', 'animalName', 'youtubeAnimal', 'youtubeUrl'));
+        return view('mypage', compact('users', 'animalName', 'youtubeAnimal', 'youtubeUrl', 'youtubeUrl1', 'youtubeUrl2'));
     }
 
     public function postLike($id)
@@ -35,6 +36,6 @@ class MyPageController extends Controller
         $voice->save();
         $user->increment("all_likes");
         $voice->save();
-        
+
     }
 }
