@@ -54,7 +54,7 @@
             </p>
 
             <div class="w-8/12 m-auto mt-6">
-              <label for="">音声URLを登録してください</label>
+              <label for="">ものまね音声のURLを登録してください</label>
                 <x-input id="email" class="block mt-1 w-full border-2 border-black py-1" type="email" name="email" :value="old('email')" required autofocus />
                 <x-button class="mt-4">
                     {{ __('投稿する') }}
@@ -84,7 +84,7 @@
               <p class="text-center text-3xl font-bold flex items-center justify-center gap-3"><span><img src="/f_f_object_101_s64_f_object_101_0nbg.png" alt="" class="w-8"></span>上手な方を選択してね<span><img src="/f_f_object_101_s64_f_object_101_0nbg.png" alt="" class="w-8"></span></p>
 
               <div class="flex justify-center gap-10 pt-8">
-                <a href="" class="font-bold text-8xl text-white bg-red-500 rounded-full leading-none px-28 py-24 hover:bg-red-300 duration-200">A</a>
+                <a href="" class="font-bold text-8xl text-white bg-red-500 rounded-full leading-none px-28 py-24 hover:bg-red-300 duration-200 border-2 border-gray-100">A</a>
                 <a href="" class="font-bold text-8xl text-white bg-blue-500 rounded-full leading-none px-28 py-24 hover:bg-blue-300 duration-200">B</a>
               </div>
             </div>
@@ -98,7 +98,11 @@
         <div id="right ranking" class="w-2/12 h-[200vh bg-blue-200 text-gray-800">
           <p class="text-2xl font-bold text-center pt-8">ランキング</p>
 
-          
+          <ul class=“text-center flex flex-col text-center gap-1 pt-8">
+            @foreach($users as $user)
+                <li class="text-center">{{ $user->name }}</li>
+            @endforeach
+            </ul>
             
 
             
