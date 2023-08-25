@@ -6,18 +6,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
-class Animal extends Model
+class Voice extends Model
 {
     use HasFactory;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
     protected $fillable = [
         'id',
-        'name',
+        'youtube_url',
     ];
 
     /**
@@ -29,11 +24,10 @@ class Animal extends Model
         'id',
     ];
 
-    public static function randomAnimal()
+    public static function animalNarrowing($animalId)
     {
-        $db_all = DB::table('animals')->count();
-        $rb = random_int(1, $db_all);
-        $animal = DB::table('animals')->where('id', $rb);
-        return $animal;
+        $voices = DB::table('voices')->where('animal_id', '=', $animalId)->get();
+        return $voices;
     }
+
 }

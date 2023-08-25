@@ -52,7 +52,6 @@
                     {{ __('投稿する') }}
                 </x-button>
             </div>
-
         </div>
 
         <div id="right ranking" class="w-2/12 h-screen bg-blue-200 text-gray-800">

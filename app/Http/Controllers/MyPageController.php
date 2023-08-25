@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Animal;
 use App\Models\User;
+use App\Models\Voice;
 
 class MyPageController extends Controller
 {
@@ -12,8 +13,12 @@ class MyPageController extends Controller
     {
         $users = User::lanking();
         $animal = Animal::randomAnimal();
+        $animalName = $animal->value('name');
+        $animalId = $animal->value('id');
+        $voiceList = Voice::animalNarrowing($animalId);
+
 
         /*var_dump(User::lanking());*/
-        return view('mypage', compact('users', 'animal'));
+        return view('mypage', compact('users', 'animalName'));
     }
 }
