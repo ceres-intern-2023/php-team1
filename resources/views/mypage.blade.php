@@ -21,8 +21,8 @@
         </style>
     </head>
     <body class="antialiased">
-      <div class="flex">
-        <div id="left status" class="w-2/12 h-screen bg-blue-200 text-gray-800">
+      <div class="flex ">
+        <div id="left status" class="w-2/12 bg-blue-200 h-[200vh] text-gray-800">
           <!-- プロフィール -->
           <div class="flex flex-col justify-center pt-8 gap-1">
             <img src="/f_f_object_109_s128_f_object_109_1nbg.png" alt="" class="w-24 m-auto">
@@ -41,9 +41,11 @@
             </ul>
             
           </div>
+          
         </div>
 
-        <div id="center main" class="w-8/12 h-screen bg-white">
+
+        <div id="center main" class="w-8/12  bg-white">
           <!-- 音声登録ゾーン -->
           <div>
             <h2 class="text-center pt-16 text-3xl font-bold flex items-center justify-center gap-3"><span><img src="/f_f_object_108_s512_f_object_108_2nbg.png" alt="" class="w-8"></span>ものまね音声を登録する<span><img src="/f_f_object_108_s512_f_object_108_2nbg.png" alt="" class="w-8"></span></h2>
@@ -61,14 +63,39 @@
           </div>
 
           <!-- 音声評価ゾーン -->
-          <div>
-            <h2 class="text-center pt-16 text-3xl font-bold flex items-center justify-center gap-3"><span><img src="/f_f_object_157_s64_f_object_157_1nbg.png" alt="" class="w-8"></span>ものまね音声の判定をする<span><img src="/f_f_object_157_s64_f_object_157_1nbg.png" alt="" class="w-8"></span></h2>
+          <div class="pt-12">
+            <h2 class="text-center pt-16 text-3xl font-bold flex items-center justify-center gap-5"><span><img src="/f_f_object_157_s64_f_object_157_1nbg.png" alt="" class="w-8"></span>ものまね音声の判定をする<span><img src="/f_f_object_157_s64_f_object_157_1nbg.png" alt="" class="w-8"></span></h2>
+
+            <div class="flex justify-center gap-8 pt-6">
+
+              <div>
+                <p class="text-2xl font-bold text-red-500">A</p>
+                <iframe width="360" height="215" src="https://www.youtube.com/embed/HVU1lM4XVVE?si=fJj2qE8y4Tee03Qk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="rounded-lg mt-1"></iframe>
+              </div>
+
+              <div>
+                <p class="text-2xl font-bold text-blue-500">B</p>
+                <iframe width="360" height="215" src="https://www.youtube.com/embed/HVU1lM4XVVE?si=fJj2qE8y4Tee03Qk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="rounded-lg mt-1"></iframe>
+              </div>
+
+            </div>
+
+            <div class="mt-16">
+              <p class="text-center text-3xl font-bold flex items-center justify-center gap-3"><span><img src="/f_f_object_101_s64_f_object_101_0nbg.png" alt="" class="w-8"></span>上手な方を選択してね<span><img src="/f_f_object_101_s64_f_object_101_0nbg.png" alt="" class="w-8"></span></p>
+
+              <div class="flex justify-center gap-10 pt-8">
+                <a href="" class="font-bold text-8xl text-white bg-red-500 rounded-full leading-none px-28 py-24 hover:bg-red-300 duration-200">A</a>
+                <a href="" class="font-bold text-8xl text-white bg-blue-500 rounded-full leading-none px-28 py-24 hover:bg-blue-300 duration-200">B</a>
+              </div>
+            </div>
 
           </div>
 
+
+
         </div>
 
-        <div id="right ranking" class="w-2/12 h-screen bg-blue-200 text-gray-800">
+        <div id="right ranking" class="w-2/12 h-[200vh bg-blue-200 text-gray-800">
           <p class="text-2xl font-bold text-center pt-8">ランキング</p>
 
           
