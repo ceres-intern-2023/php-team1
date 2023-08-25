@@ -66,6 +66,8 @@
           <div class="pt-12">
             <h2 class="text-center pt-16 text-3xl font-bold flex items-center justify-center gap-5"><span><img src="/f_f_object_157_s64_f_object_157_1nbg.png" alt="" class="w-8"></span>ものまね音声の判定をする<span><img src="/f_f_object_157_s64_f_object_157_1nbg.png" alt="" class="w-8"></span></h2>
 
+            <p class="font-bold text-xl text-center pt-4">お題:{{ $animalName }}
+            </p>
             <div class="flex justify-center gap-8 pt-6">
 
               <div>
@@ -96,13 +98,18 @@
         </div>
 
         <div id="right ranking" class="w-2/12 h-[200vh bg-blue-200 text-gray-800">
-          <p class="text-2xl font-bold text-center pt-8">ランキング</p>
+          <p class="text-2xl font-bold text-center pt-8 pb-5">ランキング</p>
+          
 
-          <ul class=“text-center flex flex-col text-center gap-1 pt-8">
-            @foreach($users as $user)
-                <li class="text-center">{{ $user->name }}</li>
+          <ul class=“w-fit m-auto flex flex-col text-left gap-1 pt-8 ">
+
+          
+              
+          
+            @foreach($users as $index => $user)
+                <li class="text-left px-16 pb-3"><span>{{ $index + 1 }}位:</span>{{ $user->name }}</li>
             @endforeach
-            </ul>
+          </ul>
             
 
             
