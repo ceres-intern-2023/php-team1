@@ -47,7 +47,7 @@ class RegisteredUserController extends Controller
             'password' => Hash::make($request->password),
             'age'=>$request->age,
             'gender'=> $request-> gender,
-            'all_likes'=>0,
+            'all_likes'=>0
         ]);
 
         event(new Registered($user));
