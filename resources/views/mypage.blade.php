@@ -48,7 +48,7 @@
           <div>
             <h2 class="text-center pt-16 text-3xl font-bold flex items-center justify-center gap-3"><span><img src="/f_f_object_108_s512_f_object_108_2nbg.png" alt="" class="w-8"></span>ものまね音声を登録する<span><img src="/f_f_object_108_s512_f_object_108_2nbg.png" alt="" class="w-8"></span></h2>
 
-            <p class="font-bold text-xl text-center pt-4">お題:{{ $animal }}
+            <p class="font-bold text-xl text-center pt-4">お題:{{ $animalName }}
             </p>
 
             <div class="w-8/12 m-auto mt-6">
@@ -62,7 +62,7 @@
 
           <!-- 音声評価ゾーン -->
           <div>
-            <h2 class="text-center pt-16 text-3xl font-bold flex items-center justify-center gap-3"><span><img src="/f_f_object_108_s512_f_object_108_2nbg.png" alt="" class="w-8"></span>ものまね音声の判定をする<span><img src="/f_f_object_108_s512_f_object_108_2nbg.png" alt="" class="w-8"></span></h2>
+            <h2 class="text-center pt-16 text-3xl font-bold flex items-center justify-center gap-3"><span><img src="/f_f_object_157_s64_f_object_157_1nbg.png" alt="" class="w-8"></span>ものまね音声の判定をする<span><img src="/f_f_object_157_s64_f_object_157_1nbg.png" alt="" class="w-8"></span></h2>
 
           </div>
 
